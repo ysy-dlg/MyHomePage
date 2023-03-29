@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiyu Yang</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Home</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#research Interests" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Research Interests</a>
+        <a href="#publications" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Publications</a>
+        <a href="#activities" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Activities</a>
+        <a href="#other" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Other</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Contact</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/ME-->
+        <img src="me.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/ysy-dlg" target="_blank">
+              <i data-feather="github"></i>
+          </a>
+          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a> -->
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <!-- <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div> -->
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Home</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Contact</a>
+          <a href="#other" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Other</a>
+          <a href="#activities" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Activities</a>
+          <a href="#publications" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Publications</a>
+          <a href="#research Interests" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Research Interests</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <!-- <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p> -->
+            <h1>Shiyu Yang (楊　詩語)</h2>
+            <h2>Ph.D. Candidate</h3>
+            <h3><a href="https://sel.ist.osaka-u.ac.jp/index.html.ja">Software Engineering Laboratory</a></h3>
+            <h3>Osaka University</h3>
+            <p></p>
+          </div>
+
+          <!--Research Interests SECTION-->
+          <div id="research Interests" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Research Interests</h2>
+            <p class="w3-margin-top-2"> 
+            I am interested in code analysis.
+            </p>
+            <p class=""> 
+            I'm working on analyzing and testing the quality of code snippets on Stack Overflow.
+            </p>
+          </div>
+
+          <!--Publications-->
+          <div id="publications" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Publications</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--Journal Papers SECTION-->
+              <h3 class="w3-border-amber">Journal Papers</h3>
+              <div class="w3-container w3-margin-top-2 w3-cursive">
+                <!-- <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Shiyu Yang, Takashi Ishio, Tetsuya Kanda, Naoto Ishida, Katsuro Inoue, “NOD4J:
+              Near-Omniscient Debugging Tool for Java Using Size-Limited Execution
+              Trace,” Science of Computer Programming, vol.206, pp102630, June 2021
+              <!-- [[detail](https://sel.ist.osaka-u.ac.jp/lab-db/betuzuri/contents.ja/1199.html)] --></li>
+                </ul> 
+              </div>
+
+            <!---Journal Papers (in Japanese) SECTION-->
+            <h3 class="w3-border-amber">Journal Papers (in Japanese)</h3>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <!-- <ul class="w3-ul" style="font-weight: 500;">
+                <li>
+                  <p>Takumi Kurihara, <strong><u>Kazumasa Shimari</u></strong>, Tetsuya Kanda, Katsuro Inoue, “Classification of changes in GitHub projects not following changes made to Stack Overflow code snippets,” IEICE TRANSACTIONS on
+                            Information and Systems, Vol.J105-D, No.11, pp.717-719, Nov. 2022.</p>
+                </li>
+                <li>
+                  <p><strong><u>Kazumasa Shimari</u></strong>, Takashi Ishio, Katsuro Inoue, “A clustering-based filtering method
+                            for similar source code fragment search,” IEICE TRANSACTIONS on
+                            Information and Systems, Vol.J103-D, No.10, pp.751-753, October 2020</p>
+                </li>
+                <li>
+                  <p><strong><u>Kazumasa Shimari</u></strong>, Takashi Ishio, Katsuro Inoue, “An execution trace recording method
+                            using a limited size storage for Java,” Computer Software, Vol.36,
+                            No.4, pp.107-113, October 2019</p>
+                </li>
+              </ul> -->
+            </div>
+
+            <!--Conference and Workshop Papers SECTION-->
+            <h3 class="w3-border-amber">Conference and Workshop Papers</h3>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <ul>
+                <li>
+                  <p><strong><u>Shiyu Yang</u></strong>, Tetsuya Kanda, Davide Pizzolotto, Daniel M. German, Yoshiki Higo, “PyVerDetector: A Chrome Extension Detecting the Python Version of Stack Overflow Code Snippets,” Proceedings of the 31th IEEE International
+              Conference on Program Coprehension (ICPC 2023), pp., Melbourne, Australia, May 2023.</p>
+                </li>
+                <li>
+                  <p><strong><u>Shiyu Yang</u></strong>, Tetsuya Kanda, Katsuro Inoue, “The Effect of Python Version Upgrades on the Compilability of Code Snippets Posted on Stack Overflow,” Proceedings of the 211th IPSJ SIG Software Engineering (SIGSE), Vol.2022-SE-211，No.28，pp.1-8, Hokkaido, Osaka, July 2022.</p>
+                </li>
+              </ul>
+            </div>
+
+
+          <!--Activities SECTION-->
+          <div id="activities" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Activities</h2>
+            <!-- <p class="w3-margin-top-2"> 
+              Academic Service
+            </p>
+            <p class=""> 
+              Award
+            </p>
+            <p class=""> 
+              Visits
+            </p>
+            <p class=""> 
+              Chair and so on
+            </p> --> 
+          </div>
+
+          <!--Other SECTION-->
+          <div id="other" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Other</h2>
+
+              <!--education--career SECTION-->
+              <h3 class="w3-border-amber">Education &amp; Career</h3>
+              <div class="w3-container w3-margin-top-2 w3-cursive">
+                <ul>
+                  <li>2022.04-: Doctor of Information Science and Technology,
+                              Graduate School of Information Science and Technology, Osaka
+                              University.</li>
+                  <li>
+                    <p>2020.04-2022.03: Master of Information Science and Technology,
+                              Graduate School of Information Science and Technology, Osaka
+                              University.</p>
+                </ul>
+              </div>
+
+            <!---thesis SECTION-->
+            <h3 class="w3-border-amber">Thesis</h3>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <ul>
+                <!-- <li>
+                  <p>Ph.D. Thesis: “Study on Cost-Effective Debugging Methods under
+                            Restricted Resources” (2022.03) [<a href="https://sel.ist.osaka-u.ac.jp/lab-db/Dthesis/contents.ja/41.html">detail</a>]</p>
+                </li> -->
+                <li>
+                  <p>Master Thesis: “Investigating Impact to Compilability of Python Code Snippets on Stack Overflow due to Python Version Upgrades.”, February
+                            2022 (in Japanese)[<a href="https://sel.ist.osaka-u.ac.jp/lab-db/Mthesis/contents.ja/156.html">detail</a>]</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Contact</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Shiyu Yang</p>
+              <p>Adress: Software Engineering Laboratory, Department of Computer Science Graduate School of Information Science and Technology, Osaka University 1-5, Yamadaoka, Suita, Osaka, 565-0871, Japan</p>
+              <p>E-mail: yangsy@ist (append “.osaka-u.ac.jp”)</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2021 - John Doe</p>
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
